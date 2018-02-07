@@ -1,9 +1,9 @@
 import { combineEpics } from 'redux-observable'
 import { combineReducers } from 'redux'
-import bullet, { fetchMemberEpic } from './bullet'
+import bullet, { fetchReposEpic } from './bullet'
 
 export const rootEpic = combineEpics(
-  fetchMemberEpic
+  fetchReposEpic
   // ... other epics
 )
 
