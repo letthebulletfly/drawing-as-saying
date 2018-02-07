@@ -1,0 +1,19 @@
+{
+  "name": "drawing-as-saying",
+  "version": "0.1.0",
+  "main": " ",
+  "repository": "git@github.com:letthebulletfly/drawing-as-saying.git",
+  "author": "Otis Chou <altispec@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "standard": "^10.0.3"
+  },
+  "workspaces": [
+    "client"
+  ]
+}
