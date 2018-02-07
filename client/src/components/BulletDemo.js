@@ -10,6 +10,7 @@ class BulletDemo extends Component {
   render () {
     return (
       <div>
+        <h2>Here is what we've build from beginning:</h2>
         <ul>
           {this.props.repos.map(repo =>
             <li key={repo.id}>{repo.name} - <a href={repo.url}>link</a></li>
