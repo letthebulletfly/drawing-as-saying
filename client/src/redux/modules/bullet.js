@@ -9,7 +9,6 @@ export const fetchRepos = (username) => ({ type: FETCH_REPOS, payload: username 
 export const fetchReposFulfilled = response => ({ type: FETCH_REPOS_FULFILLED, payload: response })
 
 // Epics - for redux observable
-
 export const fetchReposEpic = action$ => (
   action$.ofType(FETCH_REPOS)
     .mergeMap(action =>
