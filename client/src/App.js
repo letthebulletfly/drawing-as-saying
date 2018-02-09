@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import BulletDemo from './components/BulletDemo'
+import Routers from './Routers'
 
 class App extends Component {
   render () {
     return (
-      <BulletDemo />
+      <React.Fragment>
+        <Routers />
+      </React.Fragment>
     )
   }
 }
