@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Button from '../components/Button'
 import Copyright from '../components/Copyright'
+import Panel from '../components/Panel'
 
 const Wrapper = styled.div`
   display: flex;
@@ -32,10 +33,8 @@ const Form = styled.form`
   position: relative;
 `
 
-const Panel = styled.div`
+const InnerPanel = Panel.extend`
   padding: 24px 36px;
-  box-shadow: 0 48px 200px -12px rgba(52, 55, 76, 0.5);
-  border-radius: 4px;
 `
 
 const Label = styled.label`
@@ -73,7 +72,7 @@ class LoginPage extends Component {
         <Inner>
           <Logo>Drawing as Saying</Logo>
           <Form>
-            <Panel>
+            <InnerPanel>
               <Label>
                 <Field>Name</Field>
                 <Input type="text" />
@@ -82,7 +81,7 @@ class LoginPage extends Component {
                 <Field>Password</Field>
                 <Input type="password" />
               </Label>
-            </Panel>
+            </InnerPanel>
             <Button>Login</Button>
           </Form>
         </Inner>
